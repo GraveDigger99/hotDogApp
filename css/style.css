@@ -408,6 +408,9 @@ h6 {
   bottom: -10%;
   right: -55%;
   z-index: 1;
+}
+
+.loaded .image-hero__hand {
   -webkit-animation: swayHand 2s infinite alternate;
           animation: swayHand 2s infinite alternate;
 }
@@ -415,8 +418,6 @@ h6 {
 .image-hero__card {
   position: absolute;
   top: 30px;
-  -webkit-animation: shakeHand 5s infinite alternate;
-          animation: shakeHand 5s infinite alternate;
   -webkit-transform-origin: right bottom;
       -ms-transform-origin: right bottom;
           transform-origin: right bottom;
@@ -424,10 +425,18 @@ h6 {
   left: 50px;
 }
 
+.loaded .image-hero__card {
+  -webkit-animation: shakeHand 5s infinite alternate;
+          animation: shakeHand 5s infinite alternate;
+}
+
 .image-hero__decor-penny-1 {
   position: absolute;
   top: 10%;
   left: 0;
+}
+
+.loaded .image-hero__decor-penny-1 {
   -webkit-animation: levitate 1.5s infinite alternate;
           animation: levitate 1.5s infinite alternate;
 }
@@ -439,6 +448,9 @@ h6 {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.loaded .image-hero__decor-penny-2 {
   -webkit-animation: levitate 1.5s infinite alternate;
           animation: levitate 1.5s infinite alternate;
 }
@@ -447,6 +459,9 @@ h6 {
   position: absolute;
   bottom: 10%;
   left: 0;
+}
+
+.loaded .image-hero__decor-dollar-1 {
   -webkit-animation: levitate 1.5s infinite alternate;
           animation: levitate 1.5s infinite alternate;
 }
@@ -455,6 +470,9 @@ h6 {
   position: absolute;
   top: 7%;
   left: 60%;
+}
+
+.loaded .image-hero__decor-dollar-2 {
   -webkit-animation: levitate 1.5s infinite alternate;
           animation: levitate 1.5s infinite alternate;
 }
