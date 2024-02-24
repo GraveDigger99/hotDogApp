@@ -2047,6 +2047,10 @@ h6 {
     gap: 1rem;
   }
 
+  .block-adv {
+    padding-bottom: 30px;
+  }
+
   .block-adv__top {
     -ms-grid-columns: none;
     grid-template-columns: none;
