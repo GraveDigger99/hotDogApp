@@ -1166,6 +1166,97 @@ h6 {
      object-fit: cover;
 }
 
+.buisness-adv {
+  padding-bottom: 64px;
+}
+
+.buisness-adv__image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.buisness-adv__image_mobile {
+  display: none;
+}
+
+.buisness-adv__items {
+  border-radius: 0 0 25px 25px;
+  padding: 35px;
+  background: #f9fafb;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 1.8125rem;
+     -moz-column-gap: 1.8125rem;
+          column-gap: 1.8125rem;
+  row-gap: 4rem;
+}
+
+.buisness-adv__title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 111%;
+  color: #172647;
+}
+
+.block-adv {
+  padding-bottom: 64px;
+}
+
+.block-adv__top {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+
+.block-adv__top:not(:last-child) {
+  margin-bottom: 0.75rem;
+}
+
+.block-adv__item {
+  border-radius: 25px;
+  padding: 35px;
+  background: #f9fafb;
+}
+
+.block-adv__title {
+  font-size: 36px;
+  line-height: 110%;
+  letter-spacing: -0.05em;
+  color: #222834;
+}
+
+.block-adv__title:not(:last-child) {
+  margin-bottom: 1.25rem;
+}
+
+.block-adv__text {
+  font-size: 16px;
+  line-height: 145%;
+  letter-spacing: -0.02em;
+  color: rgba(34, 40, 52, 0.35);
+}
+
+.block-adv__solo {
+  border-radius: 25px;
+  padding: 35px;
+  background: #f9fafb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.page_business {
+  background-color: #fff;
+}
+
 @media (min-width: 29.99875em) {
   .no-webp .hero__wrapper{
     background: url("../img/hero/bg.jpg") center/cover no-repeat; }
@@ -1236,6 +1327,10 @@ h6 {
 
   .questions__text {
     max-width: 20.5625rem;
+  }
+
+  .buisness-adv__icon:not(:last-child) {
+    margin-bottom: 1rem;
   }
 }
 
@@ -1308,6 +1403,12 @@ h6 {
 @media (max-width: 74.0625em) {
   .image-hero__hand {
     right: -65%;
+  }
+}
+
+@media (max-width: 72.5625em) {
+  .hero__content {
+    padding-left: 20px;
   }
 }
 
@@ -1459,6 +1560,33 @@ h6 {
 
   .contacts__mail {
     font-size: 1.125rem;
+  }
+
+  .buisness-adv__items {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    -webkit-column-gap: 1.25rem;
+       -moz-column-gap: 1.25rem;
+            column-gap: 1.25rem;
+    row-gap: 1.875rem;
+  }
+
+  .buisness-adv__title {
+    font-size: 1rem;
+  }
+
+  .block-adv__item {
+    padding: 25px;
+  }
+
+  .block-adv__title {
+    font-size: 1.625rem;
+  }
+
+  .block-adv__solo {
+    padding: 25px;
   }
 }
 
@@ -1891,6 +2019,62 @@ h6 {
   .banner {
     display: none;
   }
+
+  .buisness-adv {
+    padding-bottom: 30px;
+  }
+
+  .buisness-adv__image_desktop {
+    display: none;
+  }
+
+  .buisness-adv__image_mobile {
+    display: block;
+  }
+
+  .buisness-adv__items {
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+  }
+
+  .buisness-adv__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1rem;
+  }
+
+  .block-adv__top {
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+  }
+
+  .block-adv__title:not(:last-child) {
+    margin-bottom: 0.625rem;
+  }
+
+  .block-adv__title {
+    font-size: 24px;
+  }
+
+  .block-adv__text {
+    font-size: 1rem;
+  }
+
+  .block-adv__solo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .block-adv__icon img {
+    height: 2rem;
+    width: 2rem;
+  }
 }
 
 @media (max-width: 47.99875em) and (any-hover: none) {
@@ -2079,6 +2263,22 @@ h6 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+
+  .buisness-adv__title {
+    font-size: 0.875rem;
+  }
+
+  .block-adv__item {
+    padding: 16px;
+  }
+
+  .block-adv__title {
+    font-size: 1.25rem;
+  }
+
+  .block-adv__solo {
+    padding: 16px;
   }
 }
 
